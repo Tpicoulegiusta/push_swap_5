@@ -6,7 +6,7 @@
 /*   By: tpicoule <tpicoule@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/16 12:59:30 by tpicoule          #+#    #+#             */
-/*   Updated: 2023/03/22 11:57:37 by tpicoule         ###   ########.fr       */
+/*   Updated: 2023/03/23 13:39:02 by tpicoule         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,13 @@ void		ft_rrb(t_dblist *pileb);
 t_dblist	*ft_two(t_dblist *pilea);
 t_dblist	*ft_tree(t_dblist *pilea);
 t_dblist	*ft_five(t_dblist *pilea, t_dblist *pileb);
-void		ft_check_five(t_dblist *pilea);
 int			ft_find_smallest(t_dblist *pilea);
+void		ft_smallest_at_2(t_dblist *pilea, t_dblist *pileb);
+void		ft_smallest_at_3(t_dblist *pilea, t_dblist *pileb);
+char		**ft_split(char *s, char c);
+char		**ft_countj(char **tabtab, char *s, char c);
+size_t		ft_counti(char *s, char c);
+int			ft_check_args(char **argv);
+char		*ft_substr(char *s, int start, int end);
 
 #endif

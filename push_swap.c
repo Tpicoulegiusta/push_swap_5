@@ -6,7 +6,7 @@
 /*   By: tpicoule <tpicoule@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/16 13:56:56 by tpicoule          #+#    #+#             */
-/*   Updated: 2023/03/22 15:54:47 by tpicoule         ###   ########.fr       */
+/*   Updated: 2023/03/23 13:38:44 by tpicoule         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,17 @@ int	main(int argc, char **argv)
 	i = 1;
 	pilea = dlist_new();
 	pileb = dlist_new();
+	if (ft_check_args(argv) != 0)
+		return (write(1, "Args problem\n", 13));
 	while (argv[i])
 	{
 	pilea = ft_add_bot(pilea, ft_atoi(argv[i]));
 	i++;
 	}
- 	ft_print_pile(pilea);
-	printf("\n pilea \n\n\n");
-	ft_print_pile(pileb);
-	printf("\n pileb \n\n\n");
+ 	//ft_print_pile(pilea);
+	//printf("\n pilea \n\n\n");
+	//ft_print_pile(pileb);
+	//printf("\n pileb \n\n\n");
 
 	//instru
 	//ft_rrb(pilea);
